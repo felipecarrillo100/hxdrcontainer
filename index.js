@@ -56,10 +56,15 @@ function os_func() {
 
 let os = new os_func();
 
-os.execCommand(`assimp export ./input/${jsonData.source} ./output/${jsonData.target}`, function (returnvalue) {
+const format  = jsonData.format ? `-f${jsonData.format}` : "";
+const command = `assimp export ./input/${jsonData.source} ./output/${jsonData.target} ${format}`;
+logger.log({
+  level: 'info',
+  message: "Executing: " + command
+});
+os.execCommand(command, function (returnvalue) {
     logger.log({
         level: 'info',
         message: returnvalue
       });
-
 });

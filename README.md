@@ -37,7 +37,8 @@ The configuration file must have the following structure
 ```json
 {
   "source": "Grethes-hus-bok-2.ifc",
-  "target": "Grethes-hus-bok-2.obj"
+  "target": "Grethes-hus-bok-2.obj",
+  "format": "obj"
 }
 ```
 
