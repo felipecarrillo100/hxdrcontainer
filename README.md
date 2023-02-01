@@ -32,6 +32,10 @@ assimp export <model> [<out>] [-f<h>] [common parameters]
         [See the assimp_cmd docs for a full list of all common parameters]
 ```
 
+[Common Parameters](https://documentation.help/assimp-command-line-tools/common.html)
+
+
+
 ### Configuration file
 The configuration file must have the following structure
 ```json
