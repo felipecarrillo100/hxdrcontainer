@@ -17,7 +17,7 @@ docker build -t hxdr/sample:1.0 .
 
 ### Configuration file
 The configuration file must have the following structure
-```
+```json
 {
   "source": "Grethes-hus-bok-2.ifc",
   "target": "Grethes-hus-bok-2.obj"
@@ -26,9 +26,11 @@ The configuration file must have the following structure
 
 # Execution command
 ## Run production
-```
+```sh
 docker run --rm --user hxdr:hxdr -v C:\volumes\input:/home/hxdr/input -v C:\volumes\output:/home/hxdr/output -v C:\volumes\logs:/home/hxdr/logs --memory="1g" hxdr/sample:1.0  
 ```
 
 ## Run debug with interactive console
+```sh
 docker run -it --rm --user hxdr:hxdr -v C:\volumes\input:/home/hxdr/input -v C:\volumes\output:/home/hxdr/output -v C:\volumes\logs:/home/hxdr/logs --memory="1g" hxdr/sample:1.0 /bin/bash 
+```
