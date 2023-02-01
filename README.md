@@ -24,6 +24,11 @@ Version 5.0
 ### Supported export formats
 collada, x, stp, obj, objnomtl, stl, stlb, ply, plyb, 3ds, gltf2, glb2, gltf, glb, assbin, assxml, x3d, fbx, fbxa, 3mf, assjson
 
+### Internal export options
+assimp export <model> [<out>] [-f<h>] [common parameters]
+         -f<h> Specify the file format. If omitted, the output format is
+                derived from the file extension of the given output file
+        [See the assimp_cmd docs for a full list of all common parameters]
 
 
 ### Configuration file
