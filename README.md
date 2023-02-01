@@ -31,4 +31,4 @@ docker run --rm --user hxdr:hxdr -v C:\volumes\input:/home/hxdr/input -v C:\volu
 ```
 
 ## Run debug with interactive console
-docker run -it --rm --user hxdr:hxdr -v C:\volumes\input:/home/hxdr/input -v C:\volumes\output:/home/hxdr/output -v C:\volumes\logs:/home/hxdr/logs --memory="1g" hxdr/sample:1.0 /bin/nash 
+docker run -it --rm --user hxdr:hxdr -v C:\volumes\input:/home/hxdr/input -v C:\volumes\output:/home/hxdr/output -v C:\volumes\logs:/home/hxdr/logs --memory="1g" hxdr/sample:1.0 /bin/bash 
