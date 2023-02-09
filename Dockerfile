@@ -14,6 +14,9 @@ RUN useradd -ms /bin/bash hxdr
 USER hxdr
 WORKDIR /home/hxdr
 
+RUN cp /usr/lib/x86_64-linux-gnu/libGL.so.1 /home/hxdr/lib
+
+
 COPY ./task.sh .
 COPY ./index.js .
 COPY ./package.json .
