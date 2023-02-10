@@ -6,7 +6,7 @@ echo "-----------------------------------------------------"
 
 # Delete destination folder
 echo "----------------- Deleting destination folder --------------------------"
-rm -R ./output/
+rm -R ./output/*
 
 # Starting conversion 
 npm start
